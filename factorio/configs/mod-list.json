@@ -1,0 +1,8 @@
+{
+  "mods": [
+    { "name": "base", "enabled": true },
+    { "name": "AutoDeconstruct", "enabled": true },
+    { "name": "SchallTransportGroup", "enabled": true },
+    { "name": "Warehousing", "enabled": true }
+  ]
+}

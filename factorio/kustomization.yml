@@ -1,0 +1,18 @@
+commonLabels:
+  app: factorio
+
+resources:
+  - pv-claim.yml
+  - deployment.yml
+  - service.yml
+  - network-policy.yml
+
+configMapGenerator:
+  - name: facotiro-modlist
+    files:
+      - configs/mod-list.json
+
+secretGenerator:
+  - name: factorio-userinfo
+    envs:
+      - secrets/.env
