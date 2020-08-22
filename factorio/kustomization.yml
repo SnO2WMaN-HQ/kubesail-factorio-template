@@ -4,8 +4,6 @@ commonLabels:
 resources:
   - pv-claim.yml
   - deployment.yml
-  - service.yml
-  - network-policy.yml
 
 configMapGenerator:
   - name: facotiro-modlist

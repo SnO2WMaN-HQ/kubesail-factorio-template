@@ -1,0 +1,6 @@
+bases:
+  - ../factorio
+
+resources:
+  - network-policy.yml
+  - service.yml
