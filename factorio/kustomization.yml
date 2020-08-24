@@ -9,8 +9,21 @@ configMapGenerator:
   - name: facotiro-modlist
     files:
       - configs/mod-list.json
+  - name: factorio-server-settings
+    files:
+      - configs/server-adminlist.json
+      - configs/server-banlist.json
+      - configs/server-settings.json
+      - configs/server-whitelist.json
+  - name: factorio-map-settings
+    files:
+      - configs/map-gen-settings.json
+      - configs/map-settings.json
 
 secretGenerator:
   - name: factorio-userinfo
     envs:
       - secrets/.env
+  - name: factorio-rconpw
+    files:
+      - secrets/rconpw
